@@ -12,6 +12,7 @@
 
 * **src/page Directory** : routing 가능한 page directory. 
     1) 싱글톤 service 들의 public method를 호출할 수 있고, Global event Handler를 등록할 수 있다.
+    2) image파일은 socket message로 전송하기 위해 base64로 인코딩하여 전송한다.
 
 * **src/app.vue** : Vue Root Component. 
     1) '채팅방 초대받기' 와 같이 Page Routing 위치에 상관없이 전역으로 받을 수 있는 Event Handler는 이곳에서 처리한다.
